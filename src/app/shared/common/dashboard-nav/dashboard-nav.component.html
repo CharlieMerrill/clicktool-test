@@ -1,0 +1,8 @@
+<ul class="nav navbar-nav navbar-right">
+	<li><a routerLink="/" href="/">Home</a></li>
+	<li><a routerLink="/dashboard" href="/dashboard">Dashboard</a></li>
+	<li><a routerLink="/transactions" href="/transactions">Transactions</a></li>
+	<li><a routerLink="/user/{{ app.getUserId() }}/password" href="/user/{{ app.getUserId() }}/password">Change Password</a></li>
+	<li appIfAdmin><a routerLink="/users" href="/users">Admin</a></li>
+	<li> <a (click)="logout()"> <strong>Logout</strong></a> </li>
+</ul>
